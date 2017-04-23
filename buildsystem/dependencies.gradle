@@ -6,10 +6,10 @@ allprojects {
 
 ext {
   //Android
-  androidBuildToolsVersion = "24.0.1"
+  androidBuildToolsVersion = "25.0.2"
   androidMinSdkVersion = 15
-  androidTargetSdkVersion = 21
-  androidCompileSdkVersion = 21
+  androidTargetSdkVersion = 25
+  androidCompileSdkVersion = 25
 
   //Libraries
   daggerVersion = '2.8'
@@ -52,19 +52,6 @@ ext {
       dexmakerMockito:    "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
       espresso:           "com.android.support.test.espresso:espresso-core:${espressoVersion}",
       testingSupportLib:  "com.android.support.test:testing-support-lib:${testingSupportLibVersion}",
-  ]
-
-  domainDependencies = [
-      javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
-      javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
-      rxJava:             "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
-      arrow:              "com.fernandocejas:arrow:${arrowVersion}"
-  ]
-
-  domainTestDependencies = [
-      junit:              "junit:junit:${jUnitVersion}",
-      mockito:            "org.mockito:mockito-core:${mockitoVersion}",
-      assertj:            "org.assertj:assertj-core:${assertJVersion}"
   ]
 
   dataDependencies = [
