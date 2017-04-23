@@ -15,7 +15,6 @@
  */
 package com.fernandocejas.android10.sample.data.repository.datasource;
 
-import com.fernandocejas.android10.sample.data.cache.UserCache;
 import com.fernandocejas.android10.sample.data.entity.UserEntity;
 import com.fernandocejas.android10.sample.data.net.RestApi;
 import io.reactivex.Observable;

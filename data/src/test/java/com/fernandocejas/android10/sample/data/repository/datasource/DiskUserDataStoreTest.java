@@ -15,7 +15,6 @@
  */
 package com.fernandocejas.android10.sample.data.repository.datasource;
 
-import com.fernandocejas.android10.sample.data.cache.UserCache;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
