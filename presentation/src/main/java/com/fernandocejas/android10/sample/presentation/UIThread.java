@@ -15,7 +15,7 @@
  */
 package com.fernandocejas.android10.sample.presentation;
 
-import com.fernandocejas.android10.sample.domain.executor.PostExecutionThread;
+import com.fernandocejas.android10.sample.data.executor.PostExecutionThread;
 import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import javax.inject.Inject;

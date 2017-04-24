@@ -55,6 +55,7 @@ ext {
   ]
 
   dataDependencies = [
+      arrow:              "com.fernandocejas:arrow:${arrowVersion}",
       daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
       dagger:             "com.google.dagger:dagger:${daggerVersion}",
       okHttp:             "com.squareup.okhttp:okhttp:${okHttpVersion}",

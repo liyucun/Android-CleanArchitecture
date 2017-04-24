@@ -21,11 +21,4 @@ public class MainActivity extends BaseActivity {
     ButterKnife.bind(this);
   }
 
-  /**
-   * Goes to the user list screen.
-   */
-  @OnClick(R.id.btn_LoadData)
-  void navigateToUserList() {
-    this.navigator.navigateToUserList(this);
-  }
 }
