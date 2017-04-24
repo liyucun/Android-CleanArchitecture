@@ -39,7 +39,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 @Module public class ApplicationModule {
   private final String API_BASE_URL =
-      "https://raw.githubusercontent.com/android10/Sample-Data/master/Android-CleanArchitecture";
+      "https://raw.githubusercontent.com/android10/Sample-Data/master/Android-CleanArchitecture/";
   private final AndroidApplication application;
 
   public ApplicationModule(AndroidApplication application) {

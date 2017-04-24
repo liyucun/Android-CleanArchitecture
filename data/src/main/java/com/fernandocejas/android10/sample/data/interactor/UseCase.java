@@ -14,7 +14,8 @@ import io.reactivex.schedulers.Schedulers;
  * This interface represents a execution unit for different use cases (this means any use case
  * in the application should implement this contract).
  *
- * By convention each UseCase implementation will return the result using a {@link DisposableObserver}
+ * By convention each UseCase implementation will return the result using a {@link
+ * DisposableObserver}
  * that will execute its job in a background thread and will post the result in the UI thread.
  */
 public abstract class UseCase<T, Params> {

@@ -10,14 +10,12 @@ public interface UserApi {
   /**
    * Retrieves an {@link Observable} which will emit a List of {@link UserEntity}.
    */
-  @GET("/users.json")
-  Observable<List<UserEntity>> userEntityList();
+  @GET("users.json") Observable<List<UserEntity>> userEntityList();
 
   /**
    * Retrieves an {@link Observable} which will emit a {@link UserEntity}.
    *
    * @param userId The user id used to get user data.
    */
-  @GET("/user_{id}")
-  Observable<UserEntity> userEntityById(@Path("id") final int userId);
+  @GET("user_{id}") Observable<UserEntity> userEntityById(@Path("id") final int userId);
 }

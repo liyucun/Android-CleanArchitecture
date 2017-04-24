@@ -21,6 +21,11 @@
       </intent-filter>
     </activity>
 
+    <activity
+        android:name=".view.activity.UserListActivity"
+        android:label="@string/activity_title_user_list">
+    </activity>
+
   </application>
 
 </manifest>
