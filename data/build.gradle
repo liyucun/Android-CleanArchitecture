@@ -3,7 +3,7 @@ buildscript {
     mavenCentral()
   }
   dependencies {
-    classpath 'me.tatarka:gradle-retrolambda:3.2.3'
+    classpath 'me.tatarka:gradle-retrolambda:3.6.0'
   }
 }
 
@@ -49,12 +49,11 @@ android {
 
 dependencies {
   def dataDependencies = rootProject.ext.dataDependencies
-  def testDependencies = rootProject.ext.dataTestDependencies
 
   provided dataDependencies.javaxAnnotation
   compile dataDependencies.arrow
   compile dataDependencies.javaxInject
-  compile dataDependencies.okHttp
+  compile dataDependencies.okHttp3
   compile dataDependencies.gson
   compile dataDependencies.retrofit
   compile dataDependencies.converterGson
@@ -64,9 +63,4 @@ dependencies {
   compile dataDependencies.stetho
   compile dataDependencies.stethoOkhttp3
   compile dataDependencies.androidAnnotations
-
-  testCompile testDependencies.junit
-  testCompile testDependencies.assertj
-  testCompile testDependencies.mockito
-  testCompile testDependencies.robolectric
 }

@@ -22,15 +22,3 @@ allprojects {
   }
 }
 
-task runDataUnitTests(dependsOn: [':data:cleanTestDebugUnitTest', ':data:testDebugUnitTest']) {
-  description 'Run unit tests for the data layer.'
-}
-
-task runUnitTests(dependsOn: ['runDataUnitTests']) {
-  description 'Run unit tests for data layers.'
-}
-
-task runAcceptanceTests(dependsOn: [':presentation:connectedAndroidTest']) {
-  description 'Run application acceptance tests.'
-}
-
