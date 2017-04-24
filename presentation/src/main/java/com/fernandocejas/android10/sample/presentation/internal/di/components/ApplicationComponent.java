@@ -18,6 +18,7 @@ package com.fernandocejas.android10.sample.presentation.internal.di.components;
 import android.content.Context;
 import com.fernandocejas.android10.sample.data.executor.PostExecutionThread;
 import com.fernandocejas.android10.sample.data.executor.ThreadExecutor;
+import com.fernandocejas.android10.sample.data.net.UserApi;
 import com.fernandocejas.android10.sample.presentation.internal.di.modules.ApplicationModule;
 import com.fernandocejas.android10.sample.presentation.view.activity.BaseActivity;
 import dagger.Component;
@@ -35,4 +36,5 @@ public interface ApplicationComponent {
   Context context();
   ThreadExecutor threadExecutor();
   PostExecutionThread postExecutionThread();
+  UserApi userApi();
 }

@@ -56,8 +56,13 @@ dependencies {
   compile dataDependencies.javaxInject
   compile dataDependencies.okHttp
   compile dataDependencies.gson
+  compile dataDependencies.retrofit
+  compile dataDependencies.converterGson
+  compile dataDependencies.adapterRxjava2
   compile dataDependencies.rxJava
   compile dataDependencies.rxAndroid
+  compile dataDependencies.stetho
+  compile dataDependencies.stethoOkhttp3
   compile dataDependencies.androidAnnotations
 
   testCompile testDependencies.junit
